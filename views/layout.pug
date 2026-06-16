@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    //- Customizable portion #1: the page <title>
+    title= title
+  body
+    nav
+      //- Navigation: swap between views with simple GET anchor links
+      a(href="/") Home
+      span  |
+      a(href="/about") About
+    hr
+    //- "block content" is filled in by each view that extends this layout
+    block content
