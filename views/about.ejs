@@ -1,16 +1,23 @@
-doctype html
-html(lang="en")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    //- Customizable portion #1: the page <title>
-    title= title
-  body
-    nav
-      //- Navigation: swap between views with simple GET anchor links
-      a(href="/") Home
-      span  |
-      a(href="/about") About
-    hr
-    //- "block content" is filled in by each view that extends this layout
-    block content
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>About Page</h1>
+
+  <nav>
+    <a href="/">Home</a> |
+    <a href="/user/1">User</a>
+  </nav>
+
+  <p>This is the about page.</p>
+
+
+</body>
+
+</html>
